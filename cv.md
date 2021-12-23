@@ -11,7 +11,10 @@
 > Young, active, diligent and very determined Front End Developer. Excellent communicator that enjoys being a part of a team. Always open to cooperation and willing to help 
 > whenever needed and possible . I'm keen on programming and most of my free time is devoted to coding.
 
-
+## TECHNICAL SKILLS:
+- HTML5;
+- CSS3;
+- JavaScript;я
 
 ## CODE EXAMPLE:
 ```
