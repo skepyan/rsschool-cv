@@ -1,6 +1,13 @@
 
 
-
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 body{
     width: 100%;
     margin: 0px auto;
@@ -42,24 +49,43 @@ body{
     font-size: 25px;
     font-weight: 500;
     margin-top: 5px;
+    line-height: 150%;
+}
+.header_list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.header_nav{
+    padding-top: 130px
 }
 .main_inner{
-    
     background-image: url(images/background.jpg);
+    
+}
+.header__link{
+    text-decoration: none;
+    color: rgb(26, 25, 25)
 }
 .main_bg{
     max-width: 1190px;
     margin: 0px auto;
     padding: 20px 10px;
 }
+.contacts{
+    margin-top: 40px;
+}
 .contacts-list{
     list-style: none;
     padding-left: 0px;
 }
+.header_item:not(:last-child){
+    margin-right: 18px;
+}
 .contacts-list > li > a{
     font-family: 'Merriweather', serif;
     text-decoration: none;
-    color: #333333;;
+    color: #333333;
     font-weight: 700;
     font-size: 18px;
 }
@@ -73,26 +99,40 @@ body{
 .part_cv{
     position: relative;
 }
+.aboutme{
+    margin-top: 30px;
+}
+
+.project__link{
+    text-decoration: none;
+    color: black;
+}
+.aboutme_content{
+    line-height: 150%
+}
 .part_cv:after{
     position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: black;
-  height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: black;
+    height: 1px;
 }
 .part_cv:hover::after{
     width: 100%;
+}
+.skills_item{
+    margin-top: 10px;
 }
 .contacts_item > a:hover{
     color:blue;
 }
 .part_cv + .part_cv{
-    padding-top: 15px;
+    margin-top: 30px;
 }
 h3{
     margin-bottom: 8px;
@@ -122,4 +162,7 @@ h3{
 footer{
     height: 70px;
     background-color: rgba(45, 153, 153, 0.61);
+}
+.footer_list_text{
+    font-size: 35px
 }
