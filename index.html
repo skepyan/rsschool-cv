@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Skepyan CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link  href="style.css" rel = "stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <img class="header_avatar" src="./images/avatar.jpg" alt="my_avatar">
+            <section class="header_content">
+                <h1 class="header_title">Skepyan Dzmitry</h1>
+                <p class="header_text">Front-end developer</p>
+                <nav class="header_nav">
+                    <ul class = "header_list">
+                        <li class="header_item">
+                            <a class = "header__link" href="#contacts">CONTACTS</a>
+                        </li>
+                        <li class="header_item">
+                            <a class = "header__link" href="#aboutME">ABOUT ME</a>
+                        </li>
+                        <li class="header_item">
+                            <a class = "header__link" href="#skills">TECHNICAL SKILLS</a>
+                        </li>
+                        <li class="header_item">
+                            <a class = "header__link" href="#codeExs">CODE EXAMPLE</a>
+                        </li>
+                        <li class="header_item">
+                            <a class = "header__link" href="#projects">MY PROJECT</a>
+                        </li>
+                        <li class="header_item">
+                            <a class = "header__link" href="#education">EDUCATION</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>  
+        </div>
+    </header>
+    <main class="main_inner">
+        <div class="main_bg">
+                <section id="contacts" class="contacts ">
+                    <h2>CONTACTS</h2>
+                    <address class="contacts_content">
+                        <ul class="contacts-list">
+                            <li class="contacts_item">
+                                <a href="tel:+375336181126">
+                                    <span>Tel. :</span>
+                                    +375336181126
+                                </a>
+                            </li>
+                            <li class="contacts_item">
+                                <a href="mailto:skepyan1@yandex.by" >
+                                    <span>E-mail :</span>
+                                    skepyan1@yandex.by
+                                </a>
+                            </li>
+                            <li class="contacts_item">
+                                <a href="https://t.me/skepyan">
+                                    <span>My Telegram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </section>    
+        <section id = 'aboutME' class="aboutme part_cv">
+            <h2>ABOUT ME</h2>
+            <p class = "aboutme_content">Young, active, diligent and very determined Front End Developer. 
+                Excellent communicator that enjoys being a part of a team. Always open to cooperation 
+                and willing to help whenever needed and possible
+                . I'm keen on programming and most of my free time is devoted to coding.</p>
+        </section>
+        <section id = 'skills' class = "skills part_cv">
+            <h2>TECHNICAL SKILLS</h2>
+            <ul>
+                <li class = 'skills_item'>
+                    <p>HTML5;</p>
+                </li>
+                <li>
+                    <p> CSS3;</p>
+                </li>
+                <li>
+                    <p>JavaScript;</p>
+                </li>
+            </ul>
+        </section>
+        <section id = "codeExs" class="code_example part_cv">
+            <h2>CODE EXAMPLE</h2>
+              <code> exports.avg = function avg (array) {<br>
+                let result = 0;<br>
+                if (Array.isArray(array) && array.length !== 0){<br>
+                result = array.reduce (function (acc, currentValue){<br>
+                  return acc + currentValue;<br>
+                }, 0);<br>
+                result = result / array.length;<br>
+                return result;<br>
+              }else{<br>
+                return result;<br>
+              };<br>
+                };<br>
+            </code>
+        </section>
+        <section id="projects" class="part_cv">
+            <h2>MY PROJECT</h2>
+            <ul>
+                <li>
+                    <a class = 'project__link' href="https://rolling-scopes-school.github.io/skepyan-JSFE2021Q1/virtual-piano/">piano</a>
+                </li>
+                <li>
+                    <a class = 'project__link' href="https://rolling-scopes-school.github.io/skepyan-JSFE2021Q1/photo-filter/">photo-filter</a>
+                </li>
+            </ul>
+        </section>
+        <section id = 'education' class="EDUCATION part_cv">
+            <h2>EDUCATION</h2>
+            <h3>Self-education:</h3>
+            <ul>
+               <li>HTMLAcademy: HTML & CSS basics</li> 
+               <li>learn.javascript.ru</li>
+            </ul>
+
+            <p> BELARUS STATE ECONOMIC UNIVERSITY, Faculty of Law  in 2016</p>
+        </section>
+
+        <section class="english_level part_cv">
+            <h2>ENGLISH LEVEL</h2>
+            <p> B1+</p>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <ul class="footer_list">
+            <li class="footer_list_item footer_list_text">2022</li>
+            <li class="footer_list_item">
+                <a href="https://github.com/Skepyan" class="footer_list_link">
+                    <img class="footer_list_img" src="./images/github_icon.svg" alt="github-logo">
+                </a>
+            </li>
+            <li class="footer_list_item">
+                <a href="https://rs.school/js/" class="footer_list_link">
+                    <img class="footer_list_img" src="./images/rs_school_js.svg" alt="rs-school-logo">
+                </a>
+            </li>
+            <li class="footer_list_item">
+                <a href="#" class="footer_list_link">
+                    <img class="footer_list_img" src="./images/youtube_logo.svg" alt="youtube-logo">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
